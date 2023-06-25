@@ -1,0 +1,36 @@
+import random
+
+random_number = random.randint(1, 10)
+print("Random number:", random_number)
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+num = 5
+factorial_result = factorial(num)
+print(f"The factorial of {num} is: {factorial_result}")
+
+
+def is_palindrome(word):
+    word = word.lower()
+    reversed_word = word[::-1]
+    return word == reversed_word
+
+input_word = "radar"
+if is_palindrome(input_word):
+    print(f"{input_word} is a palindrome!")
+else:
+    print(f"{input_word} is not a palindrome.")
+def is_palindrome(word):
+    word = word.lower()
+    reversed_word = word[::-1]
+    return word == reversed_word
+
+input_word = "radar"
+if is_palindrome(input_word):
+    print(f"{input_word} is a palindrome!")
+else:
+    print(f"{input_word} is not a palindrome.")
